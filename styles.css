@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #summaryCont > div {
@@ -44,4 +44,35 @@
 
 #coronaCases > h1 {
     color: #a8a8a8;
+}
+
+/* Country wise Summary Table */
+
+#countSummary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    width: 900px;
+}
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding-left: 10px;
+    font: 800 15px arial;
+}
+
+tbody > tr:nth-child(1) {
+    background-color: #ececec;
+}
+
+tbody > tr:nth-child(1) > td {
+    font-weight: normal;
+}
+
+th {
+    height: 50px;
+    text-align: left;
+    color: #686868;
 }
