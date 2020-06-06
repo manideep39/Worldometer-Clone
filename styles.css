@@ -54,13 +54,13 @@
     align-items: center;
 }
 table {
-    width: 900px;
+    width: 800px;
 }
 table, th, td {
     border: 1px solid gray;
     border-collapse: collapse;
-    padding-left: 10px;
-    font: 800 15px arial;
+    padding: 10px;
+    font: 800 16px arial;
 }
 
 tbody > tr:nth-child(1) {
@@ -75,4 +75,25 @@ th {
     height: 50px;
     text-align: left;
     color: #686868;
+}
+
+tbody > tr:hover {
+    background-color: #f0f0f0;
+}
+
+tbody > tr > td:nth-child(1) {
+    text-align: center;
+    padding: 0px;
+    color: rgb(160, 159, 159);
+    font: 13px arial;
+}
+
+tbody > tr > td:nth-child(n+3) {
+    text-align: right;
+}
+
+tbody > tr:nth-child(n+2) > td:nth-child(2) {
+    color: #106abe;
+    width: 200px;
+
 }
